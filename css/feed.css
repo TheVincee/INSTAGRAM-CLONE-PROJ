@@ -1,0 +1,178 @@
+
+body{
+position: relative;
+}
+.feed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:80%;
+    left:25%;
+}
+
+.photo{
+    width:100%;
+    background-color: white;
+    border-radius: 5px;
+    border:1px solid rgba(0,0,0,.0975);
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.photo__header{
+    padding:15px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid rgba(0,0,0,.0975);
+}
+
+.photo__avatar{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right:15px;
+}
+
+.photo__username{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.photo__file{
+    max-width: 100%;
+}
+
+.photo__info{
+    padding:20px 20px 0 20px;
+}
+
+.photo__icons{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.photo__icon:first-child{
+    margin-right:10px;
+}
+
+.photo__likes{
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.photo__comment{
+    margin-bottom: 10px;
+}
+
+.photo__comment-author{
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.photo__time-ago{
+    color:#999;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding-bottom: 10px;
+    display: block;
+    border-bottom:1px solid rgba(0,0,0,.0975);
+}
+
+.photo__add-comment-container{
+    position: relative;
+}
+
+.photo__add-comment-container i{
+    position: absolute;
+    top:17px;
+    right:0;
+}
+
+.photo__add-comment{
+    width: 97%;
+    border:0;
+    resize: none;
+    font-size: 14px;
+    padding-top:15px;
+}
+
+.photo__add-comment:focus{
+    outline: none;
+}
+
+.heart-red{
+    color:red;
+}
+
+.photo__description{
+    background-color: #f1f2f3;
+    padding-left:7px;
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.footer{
+    padding-top:0;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.more-link {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #dbdbdb;
+  padding: 20px;
+}
+.icon-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns all child elements to the start (left) */
+  justify-content: space-between;
+  position: fixed; /* Keeps the bar fixed during scrolling */
+  top: calc(50% - 50px); /* Moves the bar up by 50px */
+  transform: translateY(-50%);
+  width: 60px; /* Adjust the width as needed */
+  /* ... other styles ... */
+}
+.navigation1 {
+    padding-top: 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns all child elements to the start (left) */
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: #262626;
+  text-decoration: none;
+  padding: 17px 0;
+  font-size: 16px;
+  width: 100%; /* Ensures full width for alignment */
+  box-sizing: border-box; /* Ensures padding is included in width */
+  justify-content: flex-start; /* Aligns items to the left */
+}
